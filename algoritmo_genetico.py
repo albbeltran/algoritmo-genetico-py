@@ -73,6 +73,9 @@ def AlgoritmoGenetico(numInd, Cromosomas, ProbEmp, ProbMutacion, Generaciones):
             Emparejamiento = True
 
         print("Emparejamiento:", Emparejamiento)
+        print("Los individuos son: ")
+        if(len(IndAEmp) % 2 == 0): print("pares")
+        else: print("impares")
 
         if Emparejamiento and len(IndAEmp) % 2 == 0:
             print("Hubo emparejamiento en esta generación...")
